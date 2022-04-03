@@ -23,6 +23,7 @@ class UserSeeder extends Seeder
         $admin = new User();
         $admin->name = 'Anne Wright';
         $admin->email = 'anne@larafest.ie';
+        $admin->address = 'Wexford';
         $admin->password = Hash::make('password');
         $admin->save();
 
@@ -31,6 +32,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = 'John Jones';
         $user->email = 'john@larafest.ie';
+        $user->address = 'Cork';
         $user->password = Hash::make('password');
         $user->save();
 

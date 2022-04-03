@@ -15,7 +15,7 @@
                     @endif
                     <!-- This is a home page for the admin user -->
 
-                    You are logged in as an Admin user! <a href="{{ route('admin.hotels.index')}}"> View All Hotels</a>
+                    You are logged in as an Admin user! <a href="{{ route('admin.products.index')}}"> View All Products</a>
                 </div>
             </div>
         </div>

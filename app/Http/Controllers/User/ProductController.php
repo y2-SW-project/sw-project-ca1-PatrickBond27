@@ -4,11 +4,11 @@ namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Hotel;
+use App\Models\Product;
 
 // This main controller has functions that provides to the user.
 // In this case the user has a 'user' and it provides with the index function and show function.
-class HotelController extends Controller
+class ProductController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,10 +18,10 @@ class HotelController extends Controller
     // The index function shows all the hotels that are in the database.
     public function index()
     {
-        $hotels = Hotel::all();
+        $products = Product::all();
         return view('user.hotels.index', [
             // the view can see the hotels (the green one)
-            'hotels' => $hotels
+            'products' => $products
         ]);
     }
 
@@ -55,10 +55,10 @@ class HotelController extends Controller
     // The show function views the hotels separately.
     public function show($id)
     {
-        $hotel = Hotel::findOrFail($id);
+        $product = Product::findOrFail($id);
 
-        return view('user.hotels.show', [
-            'hotel' => $hotel
+        return view('user.products.show', [
+            'product' => $product
         ]);
     }
 
