@@ -15,12 +15,12 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    // The index function shows all the hotels that are in the database.
+    // The index function shows all the products that are in the database.
     public function index()
     {
         $products = Product::all();
-        return view('user.hotels.index', [
-            // the view can see the hotels (the green one)
+        return view('user.products.index', [
+            // the view can see the products (the green one)
             'products' => $products
         ]);
     }
@@ -52,7 +52,7 @@ class ProductController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    // The show function views the hotels separately.
+    // The show function views the products separately.
     public function show($id)
     {
         $product = Product::findOrFail($id);

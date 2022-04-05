@@ -6,7 +6,7 @@
       <div class="col-md-8 col-md-offset-2">
         <div class="card">
           <div class="card-header">
-            Edit Hotel
+            Edit Product
           </div>
           <div class="card-body">
           <!-- this block is ran if the validation code in the controller fails
@@ -20,28 +20,28 @@
                 </ul>
               </div>
             @endif
-            <form method="POST" action="{{ route('admin.hotels.update', $hotel->id)  }}" enctype="multipart/form-data">
+            <form method="POST" action="{{ route('admin.products.update', $product->id)  }}" enctype="multipart/form-data">
               <input type="hidden" name="_token" value="{{  csrf_token()  }}">
               <input type="hidden" name="_method" value="PUT">
               
               <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" name="name" value="{{ old('name', $hotel->id) }}" />
+                <input type="text" class="form-control" id="name" name="name" value="{{ old('name', $product->id) }}" />
               </div>
               <div class="form-group">
-                <label for="address">Address</label>
-                <input type="text" class="form-control" id="address" name="address" value="{{ old('address', $hotel->address) }}" />
+                <label for="description">Description</label>
+                <input type="text" class="form-control" id="description" name="description" value="{{ old('description', $product->description) }}" />
               </div>
               <div class="form-group">
-                <label for="star_rating">Star Rating</label>
-                <input type="text" class="form-control" id="star_rating" name="star_rating" value="{{ old('star_rating', $hotel->star_rating) }}" />
+                <label for="weight">Weight</label>
+                <input type="text" class="form-control" id="weight" name="weight" value="{{ old('weight', $product->weight) }}" />
               </div>
               <div class="form-group">
-                <label for="phone_number">Phone Number</label>
-                <input type="text" class="form-control" id="phone_number" name="phone_number" value="{{ old('phone_number', $hotel->phone_number) }}" />
+                <label for="price">Price</label>
+                <input type="text" class="form-control" id="price" name="price" value="{{ old('price', $product->price) }}" />
               </div>
 
-              <a href="{{ route('admin.hotels.index') }}" class="btn btn-outline">Cancel</a>
+              <a href="{{ route('admin.products.index') }}" class="btn btn-outline">Cancel</a>
               <button type="submit" class="btn btn-primary float-right">Submit</button>
             </form>
           </div>

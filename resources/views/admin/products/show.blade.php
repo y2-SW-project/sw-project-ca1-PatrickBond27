@@ -6,34 +6,34 @@
       <div class="col-md-8 col-md-offset-2">
         <div class="card">
           <div class="card-header">
-            Hotel: {{ $hotel->name }}
+            Product: {{ $product->name }}
           </div>
           <div class="card-body">
-              <table id="table-hotels" class="table table-hover">
+              <table id="table-products" class="table table-hover">
                 <tbody>
                   <tr>
-                      <td rowspan="8"><img src="{{ asset('storage/images/' . $hotel->image_location) }}" width="150"/></td>
+                      <td rowspan="8"><img src="{{ asset('storage/images/' . $product->image_location) }}" width="150"/></td>
                   </tr>
                   <tr>
                     <td>Name</td>
-                    <td>{{ $hotel->name }}</td>
+                    <td>{{ $product->name }}</td>
                   </tr>
                   <tr>
-                    <td>Address</td>
-                    <td>{{ $hotel->address }}</td>
+                    <td>Description</td>
+                    <td>{{ $product->description }}</td>
                   </tr>
                   <tr>
-                    <td>Star Rating</td>
-                    <td>{{ $hotel->star_rating}}</td>
+                    <td>Weight</td>
+                    <td>{{ $product->weight}}</td>
                   </tr>
                   <tr>
-                    <td>Phone Number</td>
-                    <td>{{ $hotel->phone_number }}</td>
+                    <td>Price</td>
+                    <td>{{ $product->price }}</td>
                   </tr>
                 </tbody>
               </table>
 
-              <a href="{{ route('user.hotels.index') }}" class="btn btn-default">Back</a>
+              <a href="{{ route('admin.products.index') }}" class="btn btn-default">Back</a>
           </div>
         </div>
       </div>
