@@ -17,9 +17,8 @@
                     Welcome to Larafest.
 
                     Read more <a href="{{ route('about') }}"> about us </a>
+                    <img src="{{ asset('storage/images/appliance shop.jpg') }}" class="">
                     
-
-
                 </div>
             </div>
         </div>

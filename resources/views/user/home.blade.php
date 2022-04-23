@@ -1,4 +1,22 @@
 @extends('layouts.app')
+<nav class="navbar navbar-expand-md navbar-light nav-color border-top shadow-sm">
+    <div class="container">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('/user/products') }}">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Kitchen</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Office</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Garden</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
 @section('content')
 <div class="container">
