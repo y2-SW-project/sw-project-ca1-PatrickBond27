@@ -14,10 +14,10 @@
                         </div>
                     @endif
 
-                    Welcome to Larafest.
+                    Welcome to Electrimal.
 
                     Read more <a href="{{ route('about') }}"> about us </a>
-                    <img src="{{ asset('storage/images/appliance shop.jpg') }}" class="">
+                    <img src="{{ asset('storage/images/appliance shop.jpg') }}" class="center" width="800px">
                     
                 </div>
             </div>

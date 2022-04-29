@@ -18,15 +18,12 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light nav-color shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" href="{{ url('/admin/home') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -40,12 +37,6 @@
                     </ul>
 
                     <!-- Right Side Of Navbar -->
-                    <div class="topnav ms-auto">
-                        <form action="/action_page.php">
-                          <input type="text" placeholder="Enter Search" name="search">
-                          <button type="submit"><i class="fa fa-search"></i></button>
-                        </form>
-                    </div>
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
                         @guest
@@ -88,7 +79,7 @@
             <div class="container">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link nav-brand-color" href="{{ url('/user/products') }}">Products</a>
+                        <a class="nav-link" href="{{ url('/admin/products') }}">Products</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Kitchen</a>
