@@ -37,6 +37,12 @@
                     </ul>
 
                     <!-- Right Side Of Navbar -->
+                    <div class="topnav ms-auto">
+                        <form action="/action_page.php">
+                          <input type="text" placeholder="Enter Search" name="search">
+                          <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
                         @guest
